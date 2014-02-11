@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/jk_detail_bottom"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/text_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="10.0dip"
+                android:textColor="#ff000000"
+                android:textSize="21.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10.0dip"
+                android:src="@drawable/line" />
+
+            <TextView
+                android:id="@id/text_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="5.0dip"
+                android:textColor="#ff000000"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" >
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@id/jk_detail_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="37.0dip"
+        android:layout_above="@id/adLayout"
+        android:background="@drawable/rl_bg" >
+
+        <Button
+            android:id="@id/button_up"
+            android:layout_width="75.0dip"
+            android:layout_height="35.0dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn"
+            android:text="上一个"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@id/button_return"
+            android:layout_width="75.0dip"
+            android:layout_height="35.0dip"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn"
+            android:text="返回"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@id/button_down"
+            android:layout_width="75.0dip"
+            android:layout_height="35.0dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn"
+            android:text="下一个"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+<!--     <RelativeLayout
+        android:id="@id/guanggao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" /> -->
+
+</RelativeLayout>

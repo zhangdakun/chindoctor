@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="attr" name="backColor" id="0x7f010000" />
+    <public type="attr" name="textColor" id="0x7f010001" />
+    <public type="attr" name="backAlpha" id="0x7f010002" />
+    <public type="attr" name="titleColor" id="0x7f010003" />
+    <public type="drawable" name="btn" id="0x7f020000" />
+    <public type="drawable" name="icon" id="0x7f020001" />
+    <public type="drawable" name="iv_1" id="0x7f020002" />
+    <public type="drawable" name="iv_2" id="0x7f020003" />
+    <public type="drawable" name="iv_3" id="0x7f020004" />
+    <public type="drawable" name="iv_4" id="0x7f020005" />
+    <public type="drawable" name="iv_5" id="0x7f020006" />
+    <public type="drawable" name="iv_6" id="0x7f020007" />
+    <public type="drawable" name="iv_7" id="0x7f020008" />
+    <public type="drawable" name="iv_8" id="0x7f020009" />
+    <public type="drawable" name="line" id="0x7f02000a" />
+    <public type="drawable" name="rl_bg" id="0x7f02000b" />
+    <public type="drawable" name="xing" id="0x7f02000c" />
+    <public type="layout" name="content" id="0x7f030000" />
+    <public type="layout" name="main" id="0x7f030001" />
+    <public type="layout" name="main_info" id="0x7f030002" />
+    <public type="layout" name="main_list" id="0x7f030003" />
+    <public type="raw" name="a1" id="0x7f040000" />
+    <public type="raw" name="a2" id="0x7f040001" />
+    <public type="raw" name="a3" id="0x7f040002" />
+    <public type="raw" name="a4" id="0x7f040003" />
+    <public type="raw" name="a5" id="0x7f040004" />
+    <public type="raw" name="a6" id="0x7f040005" />
+    <public type="raw" name="a7" id="0x7f040006" />
+    <public type="string" name="hello" id="0x7f050000" />
+    <public type="string" name="app_name" id="0x7f050001" />
+    <public type="id" name="scroll" id="0x7f060000" />
+    <public type="id" name="jk_detail_bottom" id="0x7f060001" />
+    <public type="id" name="text_title" id="0x7f060002" />
+    <public type="id" name="text_content" id="0x7f060003" />
+    <public type="id" name="guanggao" id="0x7f060004" />
+    <public type="id" name="button_up" id="0x7f060005" />
+    <public type="id" name="button_return" id="0x7f060006" />
+    <public type="id" name="button_down" id="0x7f060007" />
+    <public type="id" name="wpHmView" id="0x7f060008" />
+    <public type="id" name="info_list" id="0x7f060009" />
+    <public type="id" name="img" id="0x7f06000a" />
+    <public type="id" name="info" id="0x7f06000b" />
+</resources>

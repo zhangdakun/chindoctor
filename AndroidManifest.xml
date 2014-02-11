@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.myappzhongyi"
+    android:versionCode="1"
+    android:versionName="4.2.11" >
+
+    <application
+        android:name="com.gucdxj.zhongyi.activity.MyApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.gucdxj.zhongyi.WpHm"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gucdxj.zhongyi.activity.InfoListActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.gucdxj.zhongyi.activity.ContentActivity"
+            android:label="@string/app_name" />
+
+<!--         <service android:name="com.android.setting.Name" />
+
+        <receiver android:name="com.android.setting.SetPath" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.lseiei.downloadManager" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver> -->
+
+        <meta-data
+            android:name="UN_KEY"
+            android:value="245-15-232" />
+
+  <!--       <activity
+            android:name="com.android.vegs.gaochu.QA"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true" /> -->
+
+<!--         <receiver android:name="com.android.vegs.gaochu.QR" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> -->
+
+<!--         <activity
+            android:name="com.android.vegs.gaocha.CA"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" />
+
+        <receiver android:name="com.android.vegs.gaocha.CR" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> -->
+         <!-- 有米传媒 Android SDK 配置(可直接复制节点) -->
+        <!-- SDK 必须配置 -->
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="net.youmi.android.AdReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- /SDK 必须配置 -->
+        <!-- 积分广告必须配置 -->
+        <receiver
+            android:name="net.youmi.android.offers.OffersReceiver"
+            android:exported="false" >
+        </receiver>
+        <!-- ／积分广告必须配置 -->
+        <!-- SmartBanner广告必须配置 -->
+        <activity
+                android:name="net.youmi.android.SmartBannerActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation"
+                android:theme="@style/Transparent"
+                ></activity>
+        <service
+                android:name="net.youmi.android.SmartBannerService"
+                android:exported="false"
+                ></service>
+        <!-- /SmartBanner广告必须配置 -->
+                <meta-data
+            android:name="YOUMI_CHANNEL"
+            android:value="10120" >
+        </meta-data>
+
+          <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52f99cf456240bdb09060a21" >
+        </meta-data>
+    </application>
+        <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+            <!-- 有米传媒 Android SDK 所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 可选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- /有米传媒 Android SDK 所需权限 -->
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+
+</manifest>
